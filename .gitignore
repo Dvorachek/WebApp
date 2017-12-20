@@ -1,2 +1,8 @@
 .vs/
 MvcApp/obj/Debug/*
+*dll
+*cache
+*mp3
+*.ddl
+*.cache
+*.mp3

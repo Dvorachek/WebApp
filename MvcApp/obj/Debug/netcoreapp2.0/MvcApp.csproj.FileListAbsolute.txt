@@ -1,0 +1,11 @@
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Debug\netcoreapp2.0\MvcApp.deps.json
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Debug\netcoreapp2.0\MvcApp.runtimeconfig.json
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Debug\netcoreapp2.0\MvcApp.runtimeconfig.dev.json
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Debug\netcoreapp2.0\MvcApp.dll
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Debug\netcoreapp2.0\MvcApp.pdb
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Debug\netcoreapp2.0\MvcApp.csprojResolveAssemblyReference.cache
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Debug\netcoreapp2.0\MvcApp.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Debug\netcoreapp2.0\MvcApp.AssemblyInfoInputs.cache
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Debug\netcoreapp2.0\MvcApp.AssemblyInfo.cs
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Debug\netcoreapp2.0\MvcApp.dll
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Debug\netcoreapp2.0\MvcApp.pdb
