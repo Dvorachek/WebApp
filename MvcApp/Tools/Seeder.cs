@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using MvcApp.Models;
 using Newtonsoft.Json;
-//using JsonNet.PrivateSettersContractResolvers;
 
 namespace MvcApp.Tools
 {
@@ -13,10 +12,6 @@ namespace MvcApp.Tools
     {
         public static void Seedit(string jsonData, IServiceProvider serviceProvider)
         {
-            //JsonSerializerSettings settings = new JsonSerializerSettings
-            //{
-            //    ContractResolver = new PrivateSetterContractResolver()
-            //};
             List<Music> events = JsonConvert.DeserializeObject<List<Music>>(jsonData);
 
             using (var serviceScope = serviceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
