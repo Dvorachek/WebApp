@@ -5,6 +5,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Content Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\node_modules\angularjs\package.json" />
+    <Content Include="wwwroot\node_modules\ng-file-upload\package.json" />
+    <Content Include="wwwroot\node_modules\plyr\.vscode\settings.json" />
+    <Content Include="wwwroot\node_modules\plyr\bower.json" />
+    <Content Include="wwwroot\node_modules\plyr\bundles.json" />
+    <Content Include="wwwroot\node_modules\plyr\demo\dist\demo.css" />
+    <Content Include="wwwroot\node_modules\plyr\demo\error.html" />
+    <Content Include="wwwroot\node_modules\plyr\demo\index.html" />
+    <Content Include="wwwroot\node_modules\plyr\dist\plyr.css" />
+    <Content Include="wwwroot\node_modules\plyr\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
@@ -12,6 +32,73 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\node_modules\angularjs\.npmignore" />
+    <None Include="wwwroot\node_modules\angularjs\index.js" />
+    <None Include="wwwroot\node_modules\angularjs\README.md" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\FileAPI.flash.swf" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\FileAPI.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\FileAPI.min.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\ng-file-upload-all.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\ng-file-upload-all.min.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\ng-file-upload-shim.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\ng-file-upload-shim.min.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\ng-file-upload.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\dist\ng-file-upload.min.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\index.js" />
+    <None Include="wwwroot\node_modules\ng-file-upload\LICENSE" />
+    <None Include="wwwroot\node_modules\ng-file-upload\README.md" />
+    <None Include="wwwroot\node_modules\plyr\.github\issue_template.md" />
+    <None Include="wwwroot\node_modules\plyr\.github\pull_request_template.md" />
+    <None Include="wwwroot\node_modules\plyr\.jsbeautifyrc" />
+    <None Include="wwwroot\node_modules\plyr\.jshintrc" />
+    <None Include="wwwroot\node_modules\plyr\changelog.md" />
+    <None Include="wwwroot\node_modules\plyr\controls.md" />
+    <None Include="wwwroot\node_modules\plyr\demo\dist\demo.js" />
+    <None Include="wwwroot\node_modules\plyr\demo\dist\demo.svg" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\js\lib\classlist.js" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\js\main.js" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\components\base.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\components\buttons.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\components\error.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\components\examples.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\components\icons.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\components\type.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\demo.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\lib\animation.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\lib\fontface.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\lib\mixins.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\lib\normalize.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\less\variables.less" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\sprite\icon-github.svg" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\sprite\icon-twitter.svg" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\sprite\icon-vimeo.svg" />
+    <None Include="wwwroot\node_modules\plyr\demo\src\sprite\icon-youtube.svg" />
+    <None Include="wwwroot\node_modules\plyr\dist\plyr.js" />
+    <None Include="wwwroot\node_modules\plyr\dist\plyr.svg" />
+    <None Include="wwwroot\node_modules\plyr\gulpfile.js" />
+    <None Include="wwwroot\node_modules\plyr\license.md" />
+    <None Include="wwwroot\node_modules\plyr\readme.md" />
+    <None Include="wwwroot\node_modules\plyr\src\js\plyr.js" />
+    <None Include="wwwroot\node_modules\plyr\src\less\mixins.less" />
+    <None Include="wwwroot\node_modules\plyr\src\less\plyr.less" />
+    <None Include="wwwroot\node_modules\plyr\src\less\variables.less" />
+    <None Include="wwwroot\node_modules\plyr\src\scss\mixins.scss" />
+    <None Include="wwwroot\node_modules\plyr\src\scss\plyr.scss" />
+    <None Include="wwwroot\node_modules\plyr\src\scss\variables.scss" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-captions-off.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-captions-on.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-enter-fullscreen.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-exit-fullscreen.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-fast-forward.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-muted.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-pause.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-play.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-restart.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-rewind.svg" />
+    <None Include="wwwroot\node_modules\plyr\src\sprite\plyr-volume.svg" />
   </ItemGroup>
 
 </Project>

@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using MvcApp.Models;
+using MvcApp.Tools;
+using Microsoft.Extensions.Logging;
 
 namespace MvcApp
 {
@@ -23,6 +25,7 @@ namespace MvcApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add framework services
             services.AddMvc();
 
             services.AddDbContext<MvcAppContext>(options =>
@@ -30,7 +33,7 @@ namespace MvcApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -44,12 +47,18 @@ namespace MvcApp
 
             app.UseStaticFiles();
 
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            var dataText = System.IO.File.ReadAllText(@"Tools/musicdataseed.json");
+            Seeder.Seedit(dataText, app.ApplicationServices);
         }
     }
 }
