@@ -20,7 +20,7 @@ namespace MvcApp.Migrations
                     Filename = table.Column<string>(nullable: true),
                     Folder = table.Column<string>(nullable: true),
                     Genre = table.Column<string>(nullable: true),
-                    ReleaseDate = table.Column<DateTime>(nullable: false),
+                    ReleaseYear = table.Column<int>(nullable: true),
                     Title = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

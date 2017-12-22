@@ -17,14 +17,14 @@ namespace MvcApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "TODO";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Dylan Dvorachek";
 
             return View();
         }
@@ -34,9 +34,9 @@ namespace MvcApp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        //public IActionResult FightData()
+        //public IActionResult Music()
         //{
-
-        //}        
+        //    return View();
+        //}
     }
 }

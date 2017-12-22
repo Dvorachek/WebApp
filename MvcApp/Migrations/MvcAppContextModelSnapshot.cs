@@ -35,7 +35,7 @@ namespace MvcApp.Migrations
 
                     b.Property<string>("Genre");
 
-                    b.Property<DateTime>("ReleaseDate");
+                    b.Property<int?>("ReleaseYear");
 
                     b.Property<string>("Title");
 
