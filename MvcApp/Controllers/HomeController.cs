@@ -12,19 +12,7 @@ namespace MvcApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "TODO";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Dylan Dvorachek";
+            ViewData["Message"] = "Welcome to the homepage.. there isn't much here yet..";
 
             return View();
         }
@@ -33,10 +21,5 @@ namespace MvcApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        //public IActionResult Music()
-        //{
-        //    return View();
-        //}
     }
 }

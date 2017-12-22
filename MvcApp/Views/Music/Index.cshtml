@@ -12,27 +12,27 @@
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Title)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Artist)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Album)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ReleaseYear)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Genre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Filename)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Folder)
-                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Album)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            @*   <th>
+            @Html.DisplayNameFor(model => model.Filename)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Folder)
+        </th>*@
             <th></th>
         </tr>
     </thead>
@@ -54,12 +54,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Filename)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Folder)
-            </td>
+            @* <td>
+            @Html.DisplayFor(modelItem => item.Filename)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Folder)
+        </td>*@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
