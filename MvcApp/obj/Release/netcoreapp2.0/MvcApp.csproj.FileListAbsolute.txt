@@ -1,0 +1,10 @@
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Release\netcoreapp2.0\MvcApp.deps.json
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Release\netcoreapp2.0\MvcApp.runtimeconfig.json
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Release\netcoreapp2.0\MvcApp.runtimeconfig.dev.json
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Release\netcoreapp2.0\MvcApp.dll
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\bin\Release\netcoreapp2.0\MvcApp.pdb
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Release\netcoreapp2.0\MvcApp.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Release\netcoreapp2.0\MvcApp.AssemblyInfoInputs.cache
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Release\netcoreapp2.0\MvcApp.AssemblyInfo.cs
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Release\netcoreapp2.0\MvcApp.dll
+C:\Users\Dylan\source\repos\MvcApp\MvcApp\obj\Release\netcoreapp2.0\MvcApp.pdb
