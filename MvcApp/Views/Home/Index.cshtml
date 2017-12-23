@@ -4,12 +4,14 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 <p>This is a side project with the goal of exploring .Net and C#.
-    If you're reading this then the app has been successfully hosted on Heroku.</p>
+    If you're reading this then the app has been successfully hosted on Azure.</p>
+<p>Value for connection string <b>local_db</b> is
+    <b>@Environment.GetEnvironmentVariable("MYSQLCONNSTR_localdb")</b></p>
 
 <h4>Contact Information</h4>
 <address>
     Victoria, BC Canada<br />
-    <abbr title="Phone">P:</abbr>
+    <abbr title="Phone">Phone:</abbr>
     250.739.1684
 </address>
 

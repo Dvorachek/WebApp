@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using MvcApp.Models;
 using MvcApp.Tools;
 using Microsoft.Extensions.Logging;
+using System.Configuration;
 
 namespace MvcApp
 {
@@ -26,10 +27,14 @@ namespace MvcApp
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services
-            services.AddMvc();
+
+        //    services.AddDbContext<MvcAppContext>(options =>
+          //           options.UseSqlServer(Configuration.GetConnectionString("Azure")));
 
             services.AddDbContext<MvcAppContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MvcAppContext")));
+                     options.UseSqlServer(Configuration.GetConnectionString("MvcAppContext")));
+
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

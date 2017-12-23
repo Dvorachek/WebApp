@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8/XkUmrufE2Hrc1RMhLNTgAAAAACAAAAAAAQZgAAAAEAACAAAABdZ6gM094dKX7X72bPfow+/8JO5xGD9WB8XbHleBMbVgAAAAAOgAAAAAIAACAAAAB+/1LAv0lLL9Cc7FSPcVmVlPr0AWKK4rZ3Fuxuuuds64AAAADl+qFsUk11D0sATJfLfXH82PRfhmwEaw6XgLGA9GWwuJc/tyBo59AtrRO4gGP2Kl42U5BETmONaJ/2C+tIo18By7C4P6xIK034izCtZjDCiFe5/KLgt62A3zkpyTi8lB6XpRZ3XsCqI+4xPUeO68EAWCYoGXG8p611N+m8hWqXhUAAAADsFgRoKH9YNShnZw77GbHzYmXshtAgZBwb9jesgkaYxq3LO2WHADqnIh962pzJfU8k8UWiviTTGsq91wf++wtT</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="MvcAppContext">
+      <Value>Server=(localdb)\mssqllocaldb;Database=MvcAppContext-976c43db-bb35-4d35-a940-8f586c4c0374;Trusted_Connection=True;MultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
