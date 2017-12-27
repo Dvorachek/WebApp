@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Upload Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap jazz, using a bootstrap theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/cyborg/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+  <!-- angular shit -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+  <!-- file upload shit -->
+  <script src="../../wwwroot/node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+
+  <!-- our angular app -->
+  <script src="../../wwwroot/js/exampleAngular.js"></script>
+
+</head>
+<body ng-app="uploadApp">
+
+  <div class="jumbotron text-center">
+    <h1>Music Upload</h1>
+    <p>Showing a file upload example</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+
+      <div id="uploadDiv" class="col-sm-4" ng-hide="uploadingSong">
+          <div ng-show="fileUploaded">
+              <div class="alert alert-dismissible alert-success">
+                <strong>File Uploaded!</strong> Your song has been successfully uploaded</a>.
+              </div>
+          </div>
+          <form class="form-horizontal" name="uploadForm">
+              <legend>
+                  Upload
+              </legend>
+              <div class="form-group">
+                  <label for="inputName" class="col-lg-2 control-label">Name</label>
+                  <div class="col-lg-10">
+                      <input type="text" ng-model="songName" class="form-control" id="inputName" placeholder="Name" required>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="inputGenre" class="col-lg-2 control-label">Genre</label>
+                  <div class="col-lg-10">
+                      <input type="text" ng-model="songGenre" class="form-control" id="inputGenre" placeholder="Genre">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="select" class="col-lg-2 control-label">Albums</label>
+                <div class="col-lg-10">
+                  <select class="form-control" id="select" ng-model="choice.album" required>
+                      <option value="newAlbum">New album</option>
+                      <option ng-repeat="album in albums" value="{{album.id}}">{{album.title}}</option>
+                  </select>
+                  <input type="text" ng-show="choice.album=='newAlbum'" ng-model="newAlbumModel" class="form-control" id="inputGenre" placeholder="Album Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="select" class="col-lg-2 control-label">Artists</label>
+                <div class="col-lg-10">
+                  <select class="form-control" id="select" ng-model="choice.artist" required>
+                      <option value="newArtist">New artist</option>
+                      <option ng-repeat="artist in artists" value="{{artist.id}}">{{artist.name}}</option>
+                  </select>
+                  <input type="text" ng-show="choice.artist=='newArtist'" ng-model="newArtistModel" class="form-control" id="inputGenre" placeholder="Artist Name">
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-lg-10 col-lg-offset-2">
+                          <div required ngf-select ngf-drop ng-model="file" class="drop-box" name="file" ngf-pattern="'audio/*'"
+                          ngf-accept="'audio/*'" ngf-max-size="20MB" ngf-min-height="100"
+                          ngf-resize="{width: 400, height: 400}">Select file or drop here</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-lg-10 col-lg-offset-2">
+                      <button ng-disabled="!uploadForm.$valid" class="btn btn-info" type="submit" ng-click="submit()">submit</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+      <div class="col-sm-4" ng-show="uploadingSong">
+          <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width: {{progressPercentage}}%"></div>
+          </div>
+      </div>
+
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
