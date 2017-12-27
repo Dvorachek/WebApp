@@ -3,7 +3,7 @@ var app = angular.module('uploadApp', []);
 app.controller('uploadController', function($scope) {
     $scope.firstName= "John";
 
-    let port = PortIdService.port
+    let port = 1234;
     let url = `https://info3103.cs.unb.ca:${port}/songs`
     $scope.goodToUpload = false;
 
